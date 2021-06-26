@@ -2,7 +2,7 @@ const ProtonMail = require("../protonmail-api/index");
 
 module.exports.sendMail = async function sendMail(mail, username) {
   const pm = await ProtonMail.connect({
-    username: "genshin_resin@protonmail.com",
+    username: process.env.MAIL1,
     password: process.env.MAILPASS,
   });
 
