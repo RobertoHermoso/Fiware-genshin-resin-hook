@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.post("/hook", (req, res) => {
   console.log(req.body);
-  resinService.checkResin(req.body);
+  resinService.checkResin(req.body.data[0]);
   res.status(200).end(); // Responding is important
 });
 
