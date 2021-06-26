@@ -1,14 +1,14 @@
 const ProtonMail = require("protonmail-api");
 
-export async function sendMail() {
+export async function sendMail(mail, username) {
   const pm = await ProtonMail.connect({
     username: "genshin_resin@protonmail.com",
     password: process.env.MAILPASS,
   });
 
   await pm.sendEmail({
-    to: "rhermoso98@gmail.com",
-    subject: "Your resin is full!",
+    to: mail,
+    subject: "Your resin is full " + username + "!",
     body: "Your current resin is full charged, don't waste resin!",
   });
 
