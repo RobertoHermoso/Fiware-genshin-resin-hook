@@ -1,0 +1,80 @@
+{
+  "_from": "protonmail-api",
+  "_id": "protonmail-api@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-N65RTsaPEl7kpiipzj9NftgtedhvQ2BYb0BP4PpF4kN2bXTgwrbNhOo84JSk+8HPUT2fxQiX/o44Cienqnn3Kg==",
+  "_location": "/protonmail-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "protonmail-api",
+    "name": "protonmail-api",
+    "escapedName": "protonmail-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/protonmail-api/-/protonmail-api-2.2.0.tgz",
+  "_shasum": "ea38d1270fb3e3a67b1ab0ecd7ea5b7648f42772",
+  "_spec": "protonmail-api",
+  "_where": "E:\\Documentos\\Máster\\SIE\\Fiware-project",
+  "author": {
+    "name": "Justin Kalland",
+    "email": "justin@kalland.com"
+  },
+  "bugs": {
+    "url": "https://github.com/justinkalland/protonmail-api/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "puppeteer": "^10.0.0"
+  },
+  "deprecated": false,
+  "description": "Node.js API for ProtonMail",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "chai": "^4.3.4",
+    "docdash": "github:clenemt/docdash",
+    "dotenv": "^10.0.0",
+    "eslint-config-jk": "^1.6.0",
+    "jsdoc": "^3.6.4",
+    "mocha": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "standard-version": "^9.0.0"
+  },
+  "eslintConfig": {
+    "extends": "jk"
+  },
+  "homepage": "https://github.com/justinkalland/protonmail-api#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "name": "protonmail-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinkalland/protonmail-api.git"
+  },
+  "scripts": {
+    "jsdoc": "jsdoc -c .jsdoc.json",
+    "lint": "eslint . || true",
+    "prepublishOnly": "npm run test",
+    "prerelease": "git checkout master && git pull origin master && run-s validate jsdoc",
+    "release": "standard-version",
+    "test": "mocha tests --recursive --timeout 30000",
+    "validate": "run-s test lint"
+  },
+  "version": "2.2.0"
+}

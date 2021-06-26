@@ -1,0 +1,44 @@
+{
+  "send-email": {
+    "title": "Send Email"
+  },
+  "labels": {
+    "title": "Labels",
+    "children": {
+      "create-label": {
+          "title": "Create a New Label"
+      },
+      "delete-label": {
+        "title": "Delete a Label"
+      },
+      "tag-untag": {
+        "title": "Add and Remove Labels on Emails/Conversations"
+      }
+    }
+  },
+  "folders": {
+    "title": "Folders",
+    "children": {
+      "create-folder": {
+          "title": "Create a New Folder"
+      },
+      "delete-folder": {
+        "title": "Delete a Folder"
+      },
+      "move": {
+        "title": "Move an Email or Conversation"
+      }
+    }
+  },
+  "emails": {
+    "title": "Emails",
+    "children": {
+      "move-inbox-to-spam-for-viagra": {
+          "title": "Move emails from inbox to spam if they contain the word 'viagra'"
+      }
+    }
+  },
+  "conversations": {
+    "title": "Conversations"
+  }
+}

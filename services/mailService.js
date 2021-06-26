@@ -1,4 +1,4 @@
-const ProtonMail = require("protonmail-api");
+const ProtonMail = require("../protonmail-api/index");
 
 module.exports.sendMail = async function sendMail(mail, username) {
   const pm = await ProtonMail.connect({

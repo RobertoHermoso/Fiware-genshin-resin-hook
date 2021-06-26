@@ -1,0 +1,46 @@
+
+{
+  "tags": {
+    "allowUnknownTags": false
+  },
+  "opts": {
+    "template": "node_modules/docdash",
+    "encoding": "utf8",
+    "destination": "docs",
+    "recurse": true,
+    "verbose": true,
+    "tutorials": "tutorials/"
+  },
+  "source": {
+    "include": [
+      "DOCS_README.md",
+      "lib"
+    ]
+  },
+  "templates": {
+      "default": {
+          "outputSourceFiles": false,
+          "includeDate": false
+      }
+  },
+  "docdash": {
+    "sort": true,
+    "sectionOrder": [
+      "Tutorials",
+      "Classes",
+      "Modules",
+      "Externals",
+      "Events",
+      "Namespaces",
+      "Mixins",
+      "Interfaces"
+    ],
+    "menu":{
+      "GitHub ":{
+        "href":"https://github.com/justinkalland/protonmail-api",
+        "class":"menu-item",
+        "id":"source_link"
+      }
+    }
+  }
+}
