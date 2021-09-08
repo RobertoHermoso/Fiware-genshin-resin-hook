@@ -8,7 +8,7 @@ const mailService = require("./services/mailService");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Tell express to use body-parser's JSON parsing
+
 app.use(bodyParser.json());
 
 app.post("/hook", (req, res) => {
